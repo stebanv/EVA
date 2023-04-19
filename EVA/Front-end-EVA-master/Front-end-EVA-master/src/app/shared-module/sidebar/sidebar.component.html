@@ -1,0 +1,79 @@
+<div data-component="navbar1">
+  <aside class="main-sidebar color-blue elevation-4">
+    <a (click)="home()" class="brand-link a-style" style="align-content: center;">
+      <img src="https://i.ibb.co/W2CQb7j/100.png" alt="eva-este-si-po-favo" class="brand-image" style="width:100px">
+      <br>
+    </a>
+    <div class="sidebar">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img [src]="img" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a (click)="profile()" class="d-block a-style2">{{name}}</a>
+        </div>
+      </div>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li>
+            <a *ngIf="tipo_usuario==='estudiante'" [routerLink]="['/profile/home']" class="nav-link">
+              <i class="nav-icon fas fa-home"></i>
+              <p>
+                Resumen
+              </p>
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/test']" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Test
+              </p>
+            </a>
+          </li>
+          <li>
+            <a (click)="goActivity()" class="nav-link">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                Actividad Extracurricular
+              </p>
+            </a>
+          </li>
+          <li>
+            <a (click)="goAggre()" class="nav-link">
+              <i class="nav-icon fas fa-handshake"></i>
+              <p>
+                Convenio
+              </p>
+            </a>
+          </li>
+          <li>
+            <a *ngIf="tipo_usuario==='institucion' || tipo_usuario==='administrador'" (click)="goStudent()" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Estudiantes
+              </p>
+            </a>
+          </li>
+          <li>
+            <a *ngIf="tipo_usuario==='administrador'" [routerLink]="['/school']" class="nav-link">
+              <i class="nav-icon fas fa-school"></i>
+              <p>
+                Instituciones Educativas
+              </p>
+            </a>
+          </li>
+          <li>
+            <a *ngIf="tipo_usuario==='institucion' || tipo_usuario==='administrador'" [routerLink]="['/dashboard']" class="nav-link">
+              <i class="nav-icon fas fa-chart-line"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+</div>
+

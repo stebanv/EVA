@@ -1,0 +1,256 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<div class="content">
+  <div class="container-fluid">
+    <!-- Info boxes -->
+
+    <!-- AREAS Y PORCENTAJES -->
+    <div class="row">
+      <!-- Deportes porcentaje -->
+      <div class="col-lg-2 col-6">
+        <!-- small box -->
+        <div class="small-box bg-deporte">
+          <div class="inner">
+            <h3>{{areasValues.deportes}}%</h3>
+            <p>Deportes</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artes porcentaje -->
+      <div class="col-lg-2 col-6">
+        <!-- small box -->
+        <div class="small-box bg-arte">
+          <div class="inner">
+            <h3>{{areasValues.artes}}%</h3>
+            <p>Artes</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ciencias Sociales porcentaje -->
+      <div class="col-lg-2 col-6">
+        <!-- small box -->
+        <div class="small-box bg-sociales">
+          <div class="inner">
+            <h3>{{areasValues.sociales}}%</h3>
+            <p>Ciencias Sociales</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lógica y matemáticas porcentaje -->
+      <div class="col-lg-2 col-6">
+        <!-- small box -->
+        <div class="small-box bg-logica">
+          <div class="inner">
+            <h3>{{areasValues.logica}}%</h3>
+            <p>Lógica matemática</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tecnología porcentaje -->
+      <div class="col-lg-2 col-6">
+        <!-- small box -->
+        <div class="small-box bg-tecnologia">
+          <div class="inner">
+            <h3>{{areasValues.tecnologia}}%</h3>
+            <p>Tecnología</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ciencias Naturales porcentaje -->
+      <div class="col-lg-2 col-6">
+        <!-- small box -->
+        <div class="small-box bg-naturales">
+          <div class="inner">
+            <h3>{{areasValues.naturales}}%</h3>
+            <p>Ciencias Naturales</p>
+          </div>
+        </div>
+      </div>
+      <!-- AREAS Y PORCENTAJES -->
+    </div>
+
+    <!-- /.row -->
+    <div class="row">
+
+       <!-- recomendaciones -->
+       <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Más opciones</h3>
+          </div>
+          <div class="card-body">
+            <div class="row">
+            <div class="col-lg-4"><button [routerLink]="['/dashboard/cluster']" class="btn bg">Ver información de los clusters <i class="fas fa-user icon"></i></button></div>
+            <div class="col-lg-4"><button [routerLink]="['/dashboard/recomendacion']" class="btn bg">Ver recomendaciones <i class="fas fa-list icon"></i></button></div>
+            <div class="col-lg-4"><button (click)="download()" class="btn bg">Descargar resultados individuales <i class="fas fa-arrow-down icon"></i></button></div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+      </div>
+
+      <div class="col-lg-6">
+        <!-- gráfico de subareas relevantes -->
+        <div class="card">
+          <div class="card-header border-0">
+            <div class="d-flex justify-content-between">
+              <h3 class="card-title">Subáreas relevantes <button mat-raised-button matTooltipClass="tooltip"
+                matTooltip="El siguiente diagrama muestra las cinco subáreas del conocimiento con más número de estudiantes" matTooltipPosition="above" type="button"
+                class="btn-tooltip">Ver descripción <i class="fas fa-eye"></i></button></h3>
+            </div>
+          </div>
+          <div class="card-body">
+            <div>
+              <div>
+                <div style="display: block">
+                  <canvas baseChart [data]="barChartDataSubareas" [options]="barChartOptionsSubareas"
+                    [type]="barChartTypeSubareas" (chartHover)="chartHovered($event)">
+                  </canvas>
+                </div>
+                <br>
+                <button class="btn bg-tecnologia" mat-button mat-raised-button (click)="updateSubareas()">Actualizar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- grafico de criterios -->
+       <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header border-0">
+            <div class="d-flex justify-content-between">
+              <h3 class="card-title">Criterios <button mat-raised-button matTooltipClass="tooltip"
+                matTooltip="El siguiente diagrama muestra el número de estudiantes para cada uno de los criterios tomandos en cuenta en el test" matTooltipPosition="above" type="button"
+                class="btn-tooltip">Ver descripción <i class="fas fa-eye"></i></button></h3>
+              <div class="card-tools">
+                Elije un criterio
+                <select class="form-select" [(ngModel)]="criterioSelected" (change)="viewCriterios()">
+                  <option value="Personalidad">Personalidad</option>
+                  <option value="Intereses">Intereses</option>
+                  <option value="Delimitante-personalidad">Delimitante de personalidad</option>
+                  <option value="Delimitante-intereses">Delimitante de intereses</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div *ngIf="criterioSelected!== ''; else elseblock">
+              <div>
+                <div style="display: block">
+                  <canvas baseChart [data]="barChartDataCriterios" [options]="barChartOptionsCriterios"
+                    [type]="barChartTypeCriterios" (chartHover)="chartHovered($event)">
+                  </canvas>
+                </div>
+                <br>
+                <button class="btn bg-tecnologia" mat-button mat-raised-button (click)="updateAllCriterios()">Actualizar</button>
+              </div>
+            </div>
+            <ng-template #elseblock>
+              <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">¡Atención!</h4>
+                <p>Selecciona un criterio</p>
+              </div>
+            </ng-template>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+           <!-- grafico de areas -->
+        <div class="card">
+          <div class="card-header border-0">
+            <div class="d-flex justify-content-between">
+              <h3 class="card-title">Áreas <button mat-raised-button matTooltipClass="tooltip"
+                matTooltip="El siguiente diagrama muestra el número de estudiantes para cada uno de las áreas y subáreas del conocimiento" matTooltipPosition="above" type="button"
+                class="btn-tooltip">Ver descripción <i class="fas fa-eye"></i></button></h3>
+              <div class="card-tools">
+                Elije un área
+                <select class="form-select" [(ngModel)]="areaSelected" (change)="viewAllSubareas()">
+                  <option value="Deportes">Deportes</option>
+                  <option value="Artes">Artes</option>
+                  <option value="Ciencias-sociales">Ciencias Sociales</option>
+                  <option value="Logica-matematica">Lógica matemática</option>
+                  <option value="Tecnologia">Tecnología</option>
+                  <option value="Ciencias-naturales">Ciencias Naturales</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div *ngIf="areaSelected!== ''; else elseblock1">
+              <div>
+                <div style="display: block">
+                  <canvas baseChart [data]="barChartDataAreas" [options]="barChartOptionsAreas"
+                    [type]="barChartTypeAreas" (chartHover)="chartHovered($event)">
+                  </canvas>
+                </div>
+                <br>
+                <button class="btn bg-tecnologia" mat-button mat-raised-button (click)="updateAllSubareas()">Actualizar</button>
+              </div>
+            </div>
+            <ng-template #elseblock1>
+               <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">¡Atención!</h4>
+                <p>Selecciona un área para ver sus subáreas.</p>
+              </div>
+            </ng-template>
+          </div>
+          </div>
+        <!-- /.card -->
+      </div>
+
+      <div class="col-lg-6">
+        <!-- grafico de areas -->
+     <div class="card">
+       <div class="card-header border-0">
+         <div class="d-flex justify-content-between">
+           <h3 class="card-title">Áreas y actividades disponibles<button mat-raised-button matTooltipClass="tooltip"
+             matTooltip="El siguiente diagrama muestra la cantidad de actividades extracurriculares disponibles por cada subárea" matTooltipPosition="above" type="button"
+             class="btn-tooltip">Ver descripción <i class="fas fa-eye"></i></button></h3>
+         </div>
+       </div>
+       <div class="card-body">
+         <div *ngIf="areaSelected!== ''; else elseblock5">
+           <div>
+             <div style="display: block">
+               <canvas baseChart [data]="barChartDataActivity" [options]="barChartOptionsActivity"
+                 [type]="barChartTypeActivity" (chartHover)="chartHovered($event)">
+               </canvas>
+             </div>
+             <br>
+             <h4>No se encontraron actividades extracurriculares para las siguientes subáreas:
+               <ul *ngFor="let descrip of descripcion">
+                 <li>{{descrip}}</li>
+               </ul>
+             </h4>
+             <br>
+             <br>
+             <button class="btn bg-tecnologia" mat-button mat-raised-button (click)="updateAllSubareas()">Actualizar</button>
+           </div>
+         </div>
+         <ng-template #elseblock5>
+            <div class="alert alert-info" role="alert">
+             <h4 class="alert-heading">¡Atención!</h4>
+             <p>Selecciona un área para ver tus actividades extracurriculares.</p>
+           </div>
+         </ng-template>
+       </div>
+      <!-- /.col-md-6 -->
+
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content -->
+</div>

@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+gunicorn = "*"
+flask-mongoengine = "*"
+pymongo = "*"
+prettyconf = "*"
+mongoengine = "*"
+flask-cors = "*"
+experta = "*"
+importlib-metadata = "*"
+flask-jwt-extended = "*"
+matplotlib = "*"
+numpy = "*"
+scikit-learn = "*"
+pandas = "*"
+reportlab = "*"
+locust = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

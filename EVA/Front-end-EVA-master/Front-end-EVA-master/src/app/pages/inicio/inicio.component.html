@@ -1,0 +1,452 @@
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="#intro"><img src="../../../assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Inicio</a></li>
+          <li><a href="#about">Eva</a></li>
+          <li><a href="#services">Áreas</a></li>
+          <li><a href="#why-us">Test</a></li>
+          <li><a href="#team">Equipo</a></li>
+          <li><a [routerLink]="['/login']">Ingresar</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="../../../assets/img/intro-img.svg" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2>Exploración</h2>
+        <h2>Vocacional</h2>
+        <h2>Adaptable</h2>
+        <div>
+          <a [routerLink]="['/login']" class="btn-get-started scrollto">Ingresa</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>EVA</h3>
+          <p>Es un aplicativo web que pretende, de forma personalizada, impulsar la exploración vocacional al brindar sugerencias relacionadas con actividades extracurriculares bajo el contexto académico y económico de la institución educativa. Las recomendaciones dependerán de los intereses y la personalidad del estudiantes de educación básica secundaria.</p>
+        </header>
+
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <p>
+            Eva tiene como propósito impulsar, de forma personalizada, la exploración vocacional al brindar sugerencias relacionadas con actividades extracurriculares bajo el contexto académico y económico de la institución educativa, brindando los siguientes servicios:
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fas fa-user"></i></div>
+              <h4 class="title"><a href="">Conocer al estudiante</a></h4>
+              <p class="description">Identificar el perfil de un estudiante según los intereses y la personalidad de cada estudiante, los cúales son obtenidos mediante un test</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fas fa-school"></i></div>
+              <h4 class="title"><a href="">Recomendar actividades extracurriculares </a></h4>
+              <p class="description">Ofrecer al estudiante una lista de actividades extracurriculares recomendadas, que pueden ser realizadas en la institución educativa, según el resultado del test</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Ofrece reportes</a></h4>
+              <p class="description">Ofrece la posibilidad a la instituciones educativas de ver resultados individuales y generales de la realización de los test en sus estudiantes, junto con recomendaciones de actividades extracurriculares a realizar</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+            <img src="../../../assets/img/about-img.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Áreas</h3>
+          <p>Durante el test se identifican aquellas áreas del conocimiento que mayor afinidad tienen con el estudiante.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Deportes</a></h4>
+              <p class="description">Hace referencia al área enfocada en actividades físicas y de recreación.
+                <br>
+                Esta área se divide en: <strong>deportes atléticos, deportes de pelota y deportes de combate.
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Artes</a></h4>
+              <p class="description">Hace referencia al área enfocada en las creaciones que se realizan para expresar una visión sensible del mundo.
+                <br>
+                Esta área se divide en: <strong>danza, teatro, canto, música instrumental y artes plásticas.
+                </strong></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Ciencias Sociales</a></h4>
+              <p class="description">Hace referencia al área enfocada en el estudio de procesos sociales y culturales del mundo.
+                <br>
+                Esta área se divide en: <strong>lengua castellana e idiomas extranjeros, política y democracia y obra social.
+                </strong>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Lógica matemática</a></h4>
+              <p class="description">hace referencia al área enfocada en el pensamiento lógico acompañado de procesos matemáticos.
+                <br>
+                Esta área se divide en: <strong>lógica, estadística y contabilidad.
+                </strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Tecnología</a></h4>
+              <p class="description">Hace referencia al área enfocada en el desarrollo de conocimientos científicos acompañados del uso de herramientas que ayudan a la automatización de procesos por medio de la informática.
+                <br>
+                Esta área se divide en: <strong>uso de herramientas ofimáticas, uso de herramientas de desarrollo, producción multimedia y emprendimiento.
+                </strong> </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Ciencias Naturales</a></h4>
+              <p class="description">Hace referencia al área enfocada en el desarrollo de conocimientos científicos orientados al estudio, cuidado y preservación de la naturaleza.
+                <br>
+                Esta área se divide en: <strong>cuidado ambiental, cuidado animal, experimentación y laboratorio.
+                </strong>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Test</h3>
+          <p>El test consta de 57 preguntas y evalúa la personalidad y los intereses del estudiante</p>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+          <div class="col-lg-6 mb-4">
+            <div class="card wow bounceInUp">
+              <h5 class="card-title">Personalidad</h5>
+              <div class="card-body">
+                <p class="card-text">Se definieron cuatro criterios de personalidad, esto basado en el estudio de Myers-Briggs Type Indicador (MBTI)</p>
+                <p><strong>Actitud:</strong> se divide en introvertido y extrovertido
+                  <br>
+                  <strong>Información:</strong> se divide en intuitivo y sensorial
+                  <br>
+                  <strong>Toma de decisiones:</strong> se divide en racional y emocional
+                  <br>
+                  <strong>Estilo de vida:</strong> se divide en calificador y perceptivo
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card wow bounceInUp">
+              <h5 class="card-title">Personalidad de Holland</h5>
+              <div class="card-body">
+                <p class="card-text">Se tomarón las personalidades de la teoría de de Holland, el cual detalla seis personalidades en las cuales se pueden clasificar las personas con base en diferentes características y rasgos, los cuales son: </p>
+                <p><strong>Social, Investigador, Artista</strong>
+                  <br>
+                  <strong>Convencional, Emprendedor y realista</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card wow bounceInUp">
+              <h5 class="card-title">Intereses</h5>
+              <div class="card-body">
+                <p class="card-text">Se definieron seis criterios divididos en tres grupos que ayudarán a determinar el interés de los usuarios.  </p>
+                <p><strong>Tipo de espacio:</strong> se divide en espacio cerrado y aire libre
+                  <br>
+                  <strong>Modo de trabajo:</strong> se divide en trabajo en equipo y trabajo individual
+                  <br>
+                  <strong>Tipo de metodología:</strong> se divide en teórico y práctico
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card wow bounceInUp">
+              <h5 class="card-title">Intereses de trabajar con</h5>
+              <div class="card-body">
+                <p class="card-text">Se definieron cuatro criterios de intereses de la teoría de Holland, los cuales son:
+                  <p><strong>Interés de trabajar con cosas</strong>
+                    <br>
+                    <strong>Interés de trabajar con personas:</strong>
+                    <br>
+                    <strong>Interés de trabajar con datos</strong>
+                    <br>
+                    <strong>Interés de trabajar con ideas</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <br><br>
+          <h3>Equipo de trabajo</h3>
+          <p>Somos estudiantes de ingeniería de sistemas de la Pontificia Universidad Javeriana</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="section-header">
+              <h3 style="font-size: 20px;">Oscar Pacheco</h3>
+            </div>
+            <div class="member">
+              <img src="https://i.ibb.co/syH6fZ3/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Oscar Pacheco</h4>
+                  <span>Estudiante</span>
+                  <span>oscar.pacheco@javeriana.edu.co</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-1"></div>
+          <!-- <div class="col-lg-0.5"></div> -->
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="section-header">
+              <h3 style="font-size: 20px;">Camilo Cruz</h3>
+            </div>
+            <div class="member">
+              <img src="https://i.ibb.co/z6rfDLq/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Camilo Cruz</h4>
+                  <span>Estudiante</span>
+                  <span>cruz_camilo@javeriana.edu.co</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="section-header">
+            <h3 style="font-size: 20px;">Jenifer Medina</h3>
+          </div>
+            <div class="member">
+              <img src="https://i.ibb.co/R6xfxjb/jeni.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jenifer Medina</h4>
+                  <span>Estudiante</span>
+                  <span>jenifer.medina@javeriana.edu.co</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="section-header">
+              <h3 style="font-size: 20px;">Sandra Chávez</h3>
+            </div>
+            <div class="member">
+              <img src="https://i.ibb.co/B6Z4vLs/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sandra Chávez</h4>
+                  <span>Estudiante</span>
+                  <span>sandra.chavez@javeriana.edu.co</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="section-header">
+              <h3 style="font-size: 20px;">Angela Carrillo</h3>
+            </div>
+            <div class="member">
+              <img src="https://i.ibb.co/GvGr4L8/profe-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Anngela Carrillo</h4>
+                  <span>Directora de trabajo de grado</span>
+                  <span>angela.carrillo@javeriana.edu.co</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- agradecimientos -->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Agradecimientos</h3>
+          <br>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="d-flex justify-content-center member">
+                <img width="90px" src="data:image/jpeg;base64,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" class="img-fluid" alt="">
+              </div>
+              <p class="description">Gracias a <strong>PROSOFI</strong> se logró realizar contacto con Instituciones Educativas en Bogotá.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="d-flex justify-content-center member">
+                <img width="60px" src="https://i.ibb.co/4TF3zpq/Whats-App-Image-2022-05-23-at-2-13-11-PM.jpg"  class="img-fluid" alt="">
+              </div>
+              <p class="description">Gracias a la <strong>Institución Educativa Simón Bolivar</strong> por el apoyo durante las pruebas realizadas.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="d-flex justify-content-center member">
+                <img width="90px" src="data:image/jpeg;base64,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"  class="img-fluid" alt="">
+              </div>
+              <p class="description">Gracias a la <strong>Institución Educativa Nueva Esperanza</strong> por el apoyo durante las pruebas realizadas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #agradecimientos -->
+
+    <!--==========================
+        Testimonio
+    ============================-->
+    <!-- <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Testimonios</h3>
+          <br>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+          <div class="col-lg-6 mb-4">
+            <div class="card wow bounceInUp">
+              <h5 class="card-title">Personalidad</h5>
+              <div class="card-body">
+                <p class="card-text">Se definieron cuatro criterios de personalidad, esto basado en el estudio de Myers-Briggs Type Indicador (MBTI)</p>
+                <p><strong>Actitud:</strong> se divide en introvertido y extrovertido
+                  <br>
+                  <strong>Información:</strong> se divide en intuitivo y sensorial
+                  <br>
+                  <strong>Toma de decisiones:</strong> se divide en racional y emocional
+                  <br>
+                  <strong>Estilo de vida:</strong> se divide en calificador y perceptivo
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card wow bounceInUp">
+              <h5 class="card-title">Personalidad de Holland</h5>
+              <div class="card-body">
+                <p class="card-text">Se tomarón las personalidades de la teoría de de Holland, el cual detalla seis personalidades en las cuales se pueden clasificar las personas con base en diferentes características y rasgos, los cuales son: </p>
+                <p><strong>Social, Investigador, Artista</strong>
+                  <br>
+                  <strong>Convencional, Emprendedor y realista</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+<app-footer></app-footer>
+  <!--==========================
+    Footer
+  ============================-->
+  <!-- <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>EVA: Exploración Vocacional Adaptable</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer> -->
+  <!-- #footer -->
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+</body>

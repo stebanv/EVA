@@ -1,0 +1,282 @@
+{
+  "questions": [
+    {
+      "questionText": "Desarrollar actividades en espacios ordenados en los que tienes el control del espacio es para ti:",
+      "options": [{
+        "text": "Muy importante"
+      },
+        {
+          "text": "Moderadamente importante"
+        },
+        {
+          "text": "Poco importante"
+        },
+        {
+          "text": "Nada importante"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Sueles realizar actividades que involucren estar en contacto con la naturaleza?",
+      "options": [{
+        "text": "Si"
+      },
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Realizas actividades en los parques cerca de donde vives?",
+      "options": [{
+        "text": "Nunca"
+      },
+        {
+          "text": "Ocasionalmente"
+        },
+        {
+          "text": "Casi todos los días"
+        },
+        {
+          "text": "Todos los días"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Respecto a la afirmación “Soy una persona que pasa la mayor parte del tiempo en espacios abiertos o en el exterior” estás: ",
+      "options": [{
+        "text": "Totalmente de acuerdo"
+      },
+        {
+          "text": "Moderadamente de acuerdo"
+        },
+        {
+          "text": "Algo en desacuerdo"
+        },
+        {
+          "text": "Completamente en desacuerdo"
+        }
+      ]
+    },
+    {
+      "questionText": "¿ Disfrutas estar en espacios abiertos? ",
+      "options": [{
+        "text": "Si"
+      },
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "questionText": "Supón que eres elegido para ser el presidente del país ¿Cómo escogerías tú equipo de trabajo?",
+      "options": [{
+        "text": "Lo haría yo solo"
+      },
+        {
+          "text": "Trabajaría solo con mis amigos"
+        },
+        {
+          "text": "Trabajaría con amigos y sus recomendados"
+        },
+        {
+          "text": "Realizaría una convocatoria para encontrar el perfil más apto"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Crees que tener diferentes puntos de vista puede enriquecer la solución a un problema?",
+      "options": [{
+        "text": "Si"
+      },
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "questionText": "Si un compañero de tu grupo no sabe cómo hacer su parte del trabajo tu:",
+      "options": [{
+        "text": "Ofreces tu ayuda"
+      },
+        {
+          "text": "Esperas que los demás decidan"
+        },
+        {
+          "text": "¡Yo ya he hecho mi parte! no me interesa"
+        },
+        {
+          "text": "Solo le ayudaría si me lo pide directamente a mi"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Qué es lo que más valoras de tus compañeros a la hora de hacer actividades en grupo?",
+      "options": [{
+        "text": "Que sean inteligentes"
+      },
+        {
+          "text": "Que te caigan bien"
+        },
+        {
+          "text": "Que sepan trabajar juntos"
+        },
+        {
+          "text": "Te da igual"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Te emocionas cuando te deja trabajos en grupo?",
+      "options": [{
+        "text": "Si"
+      },
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "questionText": "Realizar actividades que involucren conocimiento de la definición de un concepto para ti es:",
+      "options": [{
+        "text": "Muy Importante"
+      },
+        {
+          "text": "Moderadamente importante"
+        },
+        {
+          "text": "Poco importante"
+        },
+        {
+          "text": "Nada importante"
+        }
+      ]
+    },
+    {
+      "questionText": "Sueles entender más fácilmente un tema si te lo explican:",
+      "options": [{
+        "text": "Con un ejercicios prácticos (Que tú debes desarrollar)"
+      },
+        {
+          "text": "Con conceptos/ definiciones (Teoría que te explican)"
+        },
+        {
+          "text": "Con ejemplos aclaratorios (Cuando te explican cómo se hacen)"
+        },
+        {
+          "text": "Cuando te asignan investigación del tema y debes explicarlo de forma practica"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Cuál de las siguientes formas de estudio te funciona mejor?",
+      "options": [{
+        "text": "Leer y transcribir los conceptos relacionados con el tema"
+      },
+        {
+          "text": "Realizar ejercicios sobre el tema"
+        },
+        {
+          "text": "Ver videos explicativos"
+        },
+        {
+          "text": "Diseñar un plan de estudio dinámico con los conceptos del tema"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Realizas ejercicios prácticos de un nuevo tema aprendido lo más pronto posible con los conceptos frescos? ",
+      "options": [{
+        "text": "Si"
+      },
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Cuándo te presentan un tema nuevo, relacionas lo aprendido con conceptos cotidianos basándote en ellos para realizar una prueba práctica?",
+      "options": [{
+        "text": "Nunca"
+      },
+        {
+          "text": "Ocasionalmente"
+        },
+        {
+          "text": "Casi siempre"
+        },
+        {
+          "text": "Siempre"
+        }
+      ]
+    },
+    {
+    "questionText": "¿Qué harías un sábado en la tarde?",
+    "options": [{
+      "text": "Ir a cine con tus amigos"
+    },
+      {
+        "text": "Leer un libro en casa"
+      },
+      {
+        "text": "Jugar videojuegos en tu casa"
+      },
+      {
+        "text": "Ir a casa de un amigo"
+      }
+    ]
+  },
+    {
+      "questionText": "Cuando trabajas en equipo tu:",
+      "options": [{
+        "text": "Prefieres pasar desapercibido"
+      },
+        {
+          "text": "Participas y expresas tu opinión"
+        },
+        {
+          "text": "Intervienes solo cuando es necesario"
+        },
+        {
+          "text": "Tomas el liderazgo del equipo"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Es fácil para ti hacer nuevos amigos/as?",
+      "options": [{
+        "text": "Si"
+      },
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "questionText": "¿Qué disfrutas más?",
+      "options": [{
+        "text": "El trabajo en equipo"
+      },
+        {
+          "text": "El silencio"
+        },
+        {
+          "text": "El ruido producido por un gran número de personas"
+        },
+        {
+          "text": "El trabajo individual"
+        }
+      ]
+    },
+    {
+    "questionText": "¿Sueles estar callado cuando estás con personas que conoces poco? ",
+    "options": [{
+      "text": "Si"
+    },
+      {
+        "text": "No"
+      }
+    ]
+    }
+  ]
+}

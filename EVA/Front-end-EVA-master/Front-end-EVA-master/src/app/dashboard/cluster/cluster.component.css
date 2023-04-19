@@ -1,0 +1,13 @@
+.bg-tecnologia{
+  color:white;
+  background-color: #084476;
+}
+
+.btn-tooltip{
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  align-items: flex-end;
+}

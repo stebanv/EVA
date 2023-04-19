@@ -1,0 +1,635 @@
+POST https://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T163239.200.json
+
+###
+
+POST https://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T162816.200.json
+
+###
+
+# @no-redirect
+POST https://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T162807.200.json
+
+###
+
+# @no-redirect
+POST https://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T162051.200.json
+
+###
+
+# @no-redirect
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T161850.200.json
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T161537.200.json
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T161448.200.json
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T160939.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T160616.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T160610.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T160550.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T160523.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T160039.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T155855.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T155848.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T155721.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T155714.500.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T155222.405.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T155115.405.html
+
+###
+
+POST http://dev.evassh.fun/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T153942.405.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "LuisaC",
+    "password": "12345"
+}
+
+<> 2022-05-04T153605.200.json
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131822.200.json
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131750.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131453.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131240.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131209.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131136.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131103.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T131028.200.json
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T130026.200.json
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T125849.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T125732.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T125700.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T125531.200.json
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T125124.200.json
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T124723.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T124639.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "12345"
+}
+
+<> 2022-05-04T123055.500.html
+
+###
+
+POST http://127.0.0.1:8003/login
+Content-Type: application/json
+
+{
+    "username": "AndreaAL",
+    "password": "123456"
+}
+
+<> 2022-05-04T122959.401.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T122010.201.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121950.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121938.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121920.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121835.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121801.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121727.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121636.400.json
+
+###
+
+POST http://127.0.0.1:8003/instituciones/6272ad582d7c02300185bf8b/estudiantes
+Content-Type: application/json
+
+{
+    "apellido": "Alvarez",
+    "curso": "3",
+    "grado": 9,
+    "nombre": "andrea",
+    "password": "123",
+    "username": "AndreaP"
+}
+
+<> 2022-05-04T121554.400.json
+
+###
+

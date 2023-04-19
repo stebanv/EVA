@@ -1,0 +1,92 @@
+<div class="container-fluid px-1 py-5 mx-auto">
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+      <h2><strong>ACTUALIZAR CONVENIO</strong></h2>
+      <div class="card">
+        <form [formGroup]="formUpdate" class="form-card" (ngSubmit)="onSubmit()">
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Nombre
+                <span class="text-danger"> *</span>
+              </label>
+              <input type="text" id="fname" name="fname" formControlName="nombre">
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Dirección
+                <span class="text-danger"> *</span>
+              </label>
+              <input type="text" id="fname" name="fname" formControlName="ubicacion">
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Recursos
+                <span class="text-danger"> *</span>
+              </label>
+              <textarea type="text" id="lname" name="lname" formControlName="recursos"></textarea>
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Descripción
+                <span class="text-danger"> *</span>
+              </label>
+              <textarea type="text" id="lname" name="lname" formControlName="descripcion"></textarea>
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Costo
+                <span class="text-danger"> *</span>
+              </label>
+              <input type="number" id="fname" name="fname" formControlName="costo">
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Horario
+                <span class="text-danger"> *</span>
+              </label>
+              <select class="form-select" formControlName="horario">
+                <option *ngFor="let sea of schedule" [value]="sea">{{sea}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3"> Área del conocimiento
+                <span class="text-danger"> *</span>
+              </label>
+              <select class="form-select" formControlName="nombre_area" (change)="subarea($event)">
+                <option *ngFor="let area of areas" [value]="area.nombre_area">{{area.nombre_area}}</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Subárea del conocimiento
+                <span class="text-danger"> *</span></label>
+                <select class="form-select" formControlName="nombre_sub_area">
+                 <option *ngFor="let subarea of choseArea.sub_areas">{{subarea.nombre_sub_area}}</option>
+               </select>
+             </div>
+            </div>
+          <div class="row justify-content-between text-left">
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Frecuencia
+                <span class="text-danger"> *</span>
+              </label>
+              <select class="form-select" formControlName="frecuencia">
+                <option *ngFor="let sea of frequency" [value]="sea">{{sea}}</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 flex-column d-flex">
+              <label class="form-control-label px-3">Temporada
+                <span class="text-danger"> *</span>
+              </label>
+              <select class="form-select" formControlName="temporada">
+                <option *ngFor="let sea of season" [value]="sea">{{sea}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-end text-left">
+            <div class="form-group col-sm-4"> <button type="submit" [disabled]="formUpdate.invalid"  class="btn-block">ACTUALIZAR</button> </div>
+            <div class="form-group col-sm-3"> <button type="button" (click)="back()"  class="btn-block" style="background-color: red;">CANCELAR</button> </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

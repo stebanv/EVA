@@ -1,0 +1,50 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Estudiantes</h1>
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+</div>
+<button (click)="enabled()" class="btn-agg">Habilitar</button>
+<button (click)="disenabled()" class="btn-agg">Deshabilitar</button>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-10 ml-auto mr-auto">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Grado</th>
+              <th class="text-right">Curso</th>
+              <th class="text-right">Acción</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let student of students | paginate: { itemsPerPage: 7, currentPage: page }; let i = index">
+            <tr>
+              <td class="text-center">{{i}}</td>
+              <td>{{student.nombre}}</td>
+              <td>{{student.apellido}}</td>
+              <td>{{student.grado}}</td>
+              <td class="text-right">{{student.curso}}</td>
+              <td class="td-actions text-right">
+                <input (click)="check(student._id.$oid)" type="checkbox">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<pagination-controls (pageChange)="page = $event"
+previousLabel="Anterior"
+nextLabel="Siguiente">
+</pagination-controls>
+
+

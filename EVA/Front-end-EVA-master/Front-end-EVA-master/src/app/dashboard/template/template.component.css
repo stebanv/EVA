@@ -1,0 +1,47 @@
+.bg-arte{
+  background-color: #d6d52b;
+  color:white;
+}
+
+.bg-deporte{
+  background-color: #ffd468;
+  color:white;
+}
+
+.bg-sociales{
+  background-color: #89ab32;
+  color:white;
+}
+
+.bg-naturales{
+  background-color: #1a6f9e;
+  color:white;
+}
+
+.bg-logica{
+  background-color: #0a5c1a;
+  color:white;
+}
+
+.bg-tecnologia{
+  background-color:  #084476;
+  color:white;
+}
+
+.bg{
+  color: white;
+  background-color: #084476;
+}
+
+.icon{
+  margin-left: 10px;
+}
+
+.btn-tooltip{
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  align-items: flex-end;
+}

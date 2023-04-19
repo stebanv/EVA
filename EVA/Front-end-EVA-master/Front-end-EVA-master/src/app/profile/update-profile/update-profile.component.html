@@ -1,0 +1,254 @@
+<div class="content rounded bg-white">
+  <form [formGroup]="formUpdate" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-md-3 border-right">
+      <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+          width="150px"
+          src="https://i.ibb.co/Nmy6sPB/estudiante-150.jpg"><br><span
+          class="font-weight-bold">{{student.nombre}} {{student.apellido}}</span><span> </span>
+      </div>
+    </div>
+    <div class="col-md-4 border-right">
+      <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="text-right"><strong>Editar Perfil</strong> </h4>
+        </div>
+          <div class="row mt-3"></div>
+          <h4 class="text-center"><strong>General</strong> </h4>
+          <!-- primera linea de dos -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Grado</label><input class="form-control" type="text"
+                    [placeholder]="student.grado" disabled></div>
+              </div>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Curso</label><input class="form-control" type="text"
+                    [placeholder]="student.curso" disabled></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- genero -->
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label class="labels">Género <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Género con el que se identifica la persona"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                </label>
+                <select class="form-select" id="inputGroupSelect01" formControlName="genero">
+                  <option selected>Selecione el género...</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="No Binario">No Binario</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <h4 class="text-center"><strong>Diversidad</strong> </h4>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Tipo
+                  <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Indica si el estudiante presenta alguna condición especial y cual es"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                </label><input type="text" class="form-control"
+                    placeholder="Nombre de la diversidad" formControlName="tipo"></div>
+              </div>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Temporalidad
+                  <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Indica la temporalidad de la condición especial si aplica"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                </label><input type="text" class="form-control"
+                    placeholder="Especifique el tiempo" formControlName="temporalidad"></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <h4 class="text-center"><strong>Notificaciones</strong> </h4>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12">
+                  <div class="col">
+                    <label class="labels">Tema <button mat-raised-button matTooltipClass="btn-tooltip"
+                      matTooltip="Indica los temas de los cuales se desea recibir notificaciones"
+                      matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                    </label>
+                    <select class="form-select" id="inputGroupSelect01" formControlName="tema">
+                      <option selected>Seleccione el tema...</option>
+                      <option value="Convenios">Convenios</option>
+                      <option value="Actividades extracurriculares">Actividades extracurriculares</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="col-md-12">
+                  <div class="col">
+                    <label class="labels">Horario de notificaciones <button mat-raised-button matTooltipClass="btn-tooltip"
+                      matTooltip="Indica los horarios en los que se desea recibir notificaciones"
+                      matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                    <select class="form-select" id="inputGroupSelect01" formControlName="horario">
+                      <option selected>Seleccione el horario...</option>
+                      <option value="Diurno">Diurno</option>
+                      <option value="Nocturno">Nocturno</option>
+                      <option value="Mixto">Mixto</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <h4 class="text-center"><strong>Horario de Actividades Extracurriculares</strong> </h4>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12">
+                  <div class="col">
+                    <label class="labels">Jornada
+                      <button mat-raised-button matTooltipClass="btn-tooltip"
+                      matTooltip="Indica la jornada en que el usuario prefiere realizar actividades extracurriculares"
+                      matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                    </label>
+                    <select class="form-select" id="inputGroupSelect01" formControlName="jornada">
+                      <option selected>Seleccione la jornada...</option>
+                      <option value="Diurno">Mañana</option>
+                      <option value="Nocturno">Tarde</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="col-md-12">
+                  <div class="col">
+                    <label class="labels">Días
+                      <button mat-raised-button matTooltipClass="btn-tooltip"
+                      matTooltip="Indica los días de la semana en que el usuario prefiere realizar actividades extracurriculares"
+                      matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                    </label>
+                    <select class="form-select" id="inputGroupSelect01" formControlName="dias">
+                      <option selected>Seleccione los días que prefiera...</option>
+                      <option value="Lunes">Lunes</option>
+                      <option value="Martes">Martes</option>
+                      <option value="Miércoles">Miércoles</option>
+                      <option value="Jueves">Jueves</option>
+                      <option value="Viernes">Viernes</option>
+                      <option value="Sábado">Sábado</option>
+                      <option value="Domingo">Domingo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+      </div>
+    </div>
+    <div class="col-md-5 border-right">
+      <div class="p-3 py-5">
+          <div class="row mt-3"></div>
+          <h4 class="text-center"><strong>Perfil de contexto</strong> </h4>
+          <!-- primera linea de dos -->
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12">
+                  <label class="labels">Jornada de estudio <button mat-raised-button matTooltipClass="btn-tooltip"
+                    matTooltip="Indica la jornada en que el usuario realiza sus actividades curriculares"
+                    matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                  <select class="form-select" id="inputGroupSelect01" formControlName="jornada_contexto">
+                    <option selected>Selecione la jornada...</option>
+                    <option value="Mañana">Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+
+          <!-- primera linea de dos -->
+          <br>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Presupuesto <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Estimación de gastos que está dispuesto a pagar el estudiante por una actividad extracurricular"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                </label>
+                  <input type="number" class="form-control"placeholder="Ingrese el presupuesto" formControlName="presupuesto"></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Número máximo de actividades extracurriculares
+                  <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Número máximo de actividades extracurriculares en las que puede registrarse un estudiante"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                  </label><input type="number" class="form-control" placeholder="Ingrese un número" formControlName="limite" ></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label class="labels"> Motivo del límite de actividades extracurriculares
+                  <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Motivo por el cual se establece el límete de actividades extracurriculares"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="causa" ></textarea>
+              </div>
+              <div class="col">
+                <label class="labels">Uso de tecnologia
+                  <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Capacidad del estudiante para desarrollarse en ambientes digitales"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                </label>
+                <select class="form-select" id="inputGroupSelect01" formControlName="alfabetizacion">
+                  <option selected>Selecione la opcion...</option>
+                  <option value="Bajo">Bajo</option>
+                  <option value="Medio" >Medio</option>
+                  <option value="Alto" >Alto</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+          <div class="col text-center"><button class="btn btn-primary profile-button" type="submit" [disabled]="formUpdate.invalid">Editar
+              Perfil</button>
+          </div>
+          <div class="col text-left">
+            <button class="btn button-cancel" type="button" (click)="back()">Cancelar</button>
+          </div>
+        </div>
+
+          <!-- fin -->
+      </div>
+    </div>
+  </div>
+</form>
+</div>

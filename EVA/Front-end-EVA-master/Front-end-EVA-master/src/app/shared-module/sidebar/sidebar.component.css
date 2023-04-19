@@ -1,0 +1,53 @@
+.navbar1 {
+  position: absolute;
+  height: 100%;
+}
+
+.color-blue{
+  background-color: #084476;
+  color: white
+}
+
+p {
+  color: white
+}
+
+i{
+  color: white;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 0;
+}
+
+.a-style{
+  color: #084476;
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: white;
+}
+
+a:hover{
+  background-color: #89AB32 ;
+}
+/* VERDE MEDIO 89AB32 */
+ /*  Verde clarito D6D52B*/
+ /* AMARILLO FFD468 */
+ /* VERDE FUERTE 0A5C1A */
+
+ .a-style2{
+  color: white;
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: #084476;
+}
+
+.a-style2:hover{
+  background-color: transparent;
+  color: #89AB32;
+}
+
+span{
+  font-weight:400;
+  font-weight: bold;
+}
+

@@ -1,0 +1,207 @@
+<div class="content rounded bg-white">
+  <form [formGroup]="formUpdate" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-md-3 border-right">
+      <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+          width="150px"
+          src="https://i.ibb.co/GWHMwVz/esculea-150.jpg"><br><span
+          class="font-weight-bold">{{school.nombre}}</span><span> </span>
+      </div>
+    </div>
+    <div class="col-md-4 border-right">
+      <div class="p-3 py-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="text-right"><strong>Editar Perfil</strong> </h3>
+        </div>
+          <div class="row mt-3"></div>
+          <h4 class="text-center"><strong>General</strong> </h4>
+          <!-- primera linea de dos -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"><label class="labels">Notificaciones <button mat-raised-button
+                matTooltipClass="btn-tooltip"
+                matTooltip="Este campo indica si el colegio desea recibir notificaciones particulares y cuáles serían"
+                matTooltipPosition="right"
+                type="button"
+                class ="btn-tooltip"
+                ><i class="fas fa-solid fa-exclamation"></i></button></label>
+              <input type="text" class="form-control"
+                placeholder="Especifique las notificaciones" formControlName="notificaciones"> </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <h4 class="text-center"><strong>Área del conocimiento</strong> </h4>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Área <button mat-raised-button
+                  matTooltipClass="btn-tooltip"
+                  matTooltip="Este campo indica el área del conocimiento que presentan un mayor interés para desarrollar por la institución educativa"
+                  matTooltipPosition="right"
+                  type="button"
+                  class ="btn-tooltip"
+                  ><i class="fas fa-solid fa-exclamation"></i></button></label>
+                  <select class="form-select" formControlName="area">
+                    <option *ngFor="let area of areas" [value]="area.nombre_area">{{area.nombre_area}}</option>
+                  </select>
+                 </div>
+              </div>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Recursos <button mat-raised-button
+                  matTooltipClass="btn-tooltip"
+                  matTooltip="Este campo indica los recursos que pueden tener las actividades extracurriculares"
+                  matTooltipPosition="right"
+                  type="button"
+                  class ="btn-tooltip"
+                  ><i class="fas fa-solid fa-exclamation"></i></button></label><textarea type="text" class="form-control"
+                    placeholder="Especifique los recursos" formControlName="recursos_area"></textarea></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <h4 class="text-center"><strong>Forma de presentar resultados</strong> </h4>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col-md-12">
+                  <div class="col">
+                    <label class="labels">Resultados
+                      <button mat-raised-button matTooltipClass="btn-tooltip"
+                        matTooltip="En este campo se describe como la institución educativa desea recibir los reportes de los resultados de los estudiantes"
+                        matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button>
+                    </label>
+                    <input type="text" class="form-control"
+                    placeholder="Resultados" formControlName="resultados">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <h3 class="text-left"><strong>Perfil de contexto</strong> </h3>
+          <div class="container">
+            <div class="row">
+              <h4 class="text-center"><strong>Reglamentación</strong></h4>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Límite de actividades extracurriculares <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="En este campo se describe el número de actividades extracurriculares que tiene la institución educativa"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                  <input type="number" class="form-control"placeholder="Ingrese el límite" formControlName="limite"></div>
+              </div>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Reglas <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="En este campo representa el manual de convivencia de la institución educativa"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                  <textarea type="text" class="form-control"placeholder="Ingrese las reglas" formControlName="reglas"></textarea></div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+      </div>
+    </div>
+    <div class="col-md-5 border-right">
+      <div class="p-3 py-5">
+          <!-- primera linea de dos -->
+          <br>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <div class="container">
+            <div class="row">
+              <h4 class="text-center"><strong>Tecnológico</strong></h4>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Adecuación <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Detalla las adecuaciones tecnológicos con las cuales cuenta la institución educativa"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                  <ng-multiselect-dropdown
+                  [placeholder]="'Adecuaciones'"
+                  [settings]="dropdownSettingsAdecuacion"
+                  [data]="dropdownListAdecuacion"
+                  formControlName="adecuacion"
+                  >
+                </ng-multiselect-dropdown>
+                </div>
+              </div>
+              <div class="col">
+                <div class="col-md-12"><label class="labels">Recursos <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Detalla los recursos tecnológicos con los cuales cuenta la institución educativa"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                  <ng-multiselect-dropdown
+                  [placeholder]="'Recursos'"
+                  [settings]="dropdownSettingsRecursosA"
+                  [data]="dropdownListRecursosA"
+                  formControlName="recursos_adecuacion"
+                  >
+                </ng-multiselect-dropdown>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+          <!-- primera linea de dos -->
+          <br>
+          <div class="container">
+            <div class="row">
+              <h4 class="text-center"><strong>Estructura </strong></h4>
+              <div class="col">
+                <label class="labels"> Tipo de espacios <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Describe los tipos de espacios con los cuales cuanta la institución educativa para el desarrollo de las diferentes actividades extracurriculares"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                <ng-multiselect-dropdown
+                  [placeholder]="'Espacios'"
+                  [settings]="dropdownSettingsEspacios"
+                  [data]="dropdownListEspacios"
+                  formControlName="tipo_espacio"
+                  >
+                </ng-multiselect-dropdown>
+              </div>
+              <div class="col">
+                <label class="labels">Recursos <button mat-raised-button matTooltipClass="btn-tooltip"
+                  matTooltip="Describe los recursos con los cuales cuanta la institución educativa para el desarrollo de las diferentes actividades extracurriculares"
+                  matTooltipPosition="right" type="button" class="btn-tooltip"><i class="fas fa-solid fa-exclamation"></i></button></label>
+                <ng-multiselect-dropdown
+                  [placeholder]="'Recursos'"
+                  [settings]="dropdownSettingsRecursosE"
+                  [data]="dropdownListRecursosE"
+                  formControlName="recursos_estructura"
+                  >
+                </ng-multiselect-dropdown>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+              <div class="row">
+                <h4 class="text-center"><strong>Habilitar y deshabilitar Test </strong></h4>
+                <div class="col-md-9">
+                  <p>Presione el botón si desea que los estudiantes llenen el test o no</p>
+                </div>
+                <div class="col-md-3">
+                  <mat-slide-toggle color="primary" [ngModelOptions]="{standalone: true}"  [(ngModel)]="enabledTest"></mat-slide-toggle>
+              </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+          <div class="col text-center"><button class="btn btn-primary profile-button" type="submit" [disabled]="formUpdate.invalid">Editar
+              Perfil</button>
+          </div>
+          <div class="col text-left">
+            <button class="btn button-cancel" type="button" (click)="onBack()">Cancelar</button>
+          </div>
+        </div>
+          <!-- fin -->
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+

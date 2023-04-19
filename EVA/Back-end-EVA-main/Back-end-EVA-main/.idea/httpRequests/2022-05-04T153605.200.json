@@ -1,0 +1,6 @@
+{
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MTY5NjU2NSwianRpIjoiZWFlZTdkZGMtYmE1MS00ODZlLWEyMTMtNWFjNzlhNGY0NDNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjYyNzJkZWRhMGUwNDQyZjBmZTY4Mjg0OCIsIm5iZiI6MTY1MTY5NjU2NSwiZXhwIjoxNjUxNjk3NDY1fQ.U9iT11rfANvX023lbv1piUV7nKgmvV9xrh87CGWUDP4",
+  "referencia_estudiante": "6272deda0e0442f0fe682848",
+  "referencia_institucion": "6272ad582d7c02300185bf8b",
+  "tipo_usuario": "estudiante"
+}

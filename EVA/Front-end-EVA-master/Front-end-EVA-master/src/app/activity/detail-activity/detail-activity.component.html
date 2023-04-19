@@ -1,0 +1,31 @@
+<div class="content rounded bg-white m-20">
+  <div class="row">
+      <div class="col-md-3 border-right">
+          <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+            <!-- <img width="160px" src="https://i.ibb.co/DYgZWRf/extracurriculares.jpg"> -->
+          </div>
+        </div>
+      <div class="col-md-5 border-right">
+          <div class="p-3 py-4">
+              <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="text-right"><strong>Actividad Extracurricular</strong></h3>
+              </div>
+              <div class="row mt-2">
+                  <div class="col-md-6"><label class="labels">Nombre</label><p>{{activity.nombre}}</p></div>
+                  <div class="col-md-6"><label class="labels">Descripción</label><p>{{activity.descripcion}}</p></div>
+              </div>
+              <div class="row mt-3">
+                  <div class="col-md-6"><label class="labels">Máximo de estudiantes</label><p>{{activity.cupos}}</p></div>
+                  <div class="col-md-6"><label class="labels">Área del conocimiento</label><p>{{activity.area}}</p></div>
+                  <div class="col-md-6"><label class="labels">Subárea</label><p>{{activity.subarea}}</p></div>
+                  <div class="col-md-6"><label class="labels">Recursos</label><p>{{activity.recursos}}</p></div>
+                  <div class="col-md-12"><label class="labels">Horario</label><p>{{activity.horario}}</p></div>
+              </div>
+              <div class="mt-5 text-center"><button (click)="back()" class="btn btn-color profile-button" type="button">Atrás</button></div>
+              <br>
+              <br>
+            </div>
+      </div>
+  </div>
+</div>
+

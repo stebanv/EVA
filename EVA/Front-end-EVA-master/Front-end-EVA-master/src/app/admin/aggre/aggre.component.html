@@ -1,0 +1,50 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h3><strong>Seleccione una institución educativa</strong> </h3>
+        <select class="form-select" id="inputGroupSelect01" [(ngModel)]="idSelect" (change)="selectId()">
+          <option *ngFor="let school of schools" [value]="school._id.$oid">{{school.nombre}}</option>
+        </select>
+
+        <br>
+
+      </div><!-- /.container-fluid -->
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="select===true">
+  <div class="container form-group">
+    <div class="row">
+    <div class="col-lg-6">
+      <input type="text" class="form-control" placeholder="Buscar convenios"  [(ngModel)]="word" (keydown)="search()">
+    </div>
+    <div class="col-lg-6">
+      <button *ngIf="tipo_usuario === 'institucion' || tipo_usuario ==='administrador'" [routerLink]="['/aggrement/create']" class="btn-agg">AGREGAR<i class="fas fa-plus"></i></button>
+    </div>
+    </div>
+  </div>
+  <div class="activity--grid">
+    <div class="row">
+  <!-- Gallery item -->
+      <div class="col-xl-3 col-lg-4 col-md-6 mb-4" *ngFor="let aggre of DTOAggrements | paginate: { itemsPerPage: 4, currentPage: page }">
+        <div class="bg-white rounded shadow-sm"><img src="https://i.ibb.co/K95w94d/convenios.jpg" alt="" class="img-fluid card-img-top">
+          <div class="p-4">
+            <h5> <a [routerLink]="['/aggrement/detail', aggre._id.$oid]"  class="text-dark">{{aggre.nombre}}</a></h5>
+            <p class="small text-muted mb-0">{{aggre.descripcion}}</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill px-3 py-2 mt-4">
+              <button *ngIf="tipo_usuario === 'institucion' || tipo_usuario ==='administrador'" [routerLink]="['/aggrement/update', aggre._id.$oid]" class="button-edit"><i class="fas fa-pen"></i></button>
+              <button *ngIf="tipo_usuario === 'institucion' || tipo_usuario ==='administrador'" (click)="delete(aggre._id.$oid)" class="button-delete"><i class="fas fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="page = $event"
+    previousLabel="Anterior"
+    nextLabel="Siguiente">
+  </pagination-controls>
+</div>

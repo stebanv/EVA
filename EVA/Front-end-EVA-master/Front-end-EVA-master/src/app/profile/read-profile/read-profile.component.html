@@ -1,0 +1,100 @@
+<div class="content rounded bg-white">
+  <div class="row">
+    <div class="col-md-3 border-right">
+      <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+          width="150px" src="https://i.ibb.co/Nmy6sPB/estudiante-150.jpg"><br><span
+          class="font-weight-bold">{{student.nombre}} {{student.apellido}}</span><span
+          class="text-black-50"></span><span> </span></div>
+          <div class="col-md-12 text-center">
+            <button class="btn btn2" type="button" [routerLink]="['/test/result']">Ver resultados del test</button>
+          </div>
+          <br>
+          <div class="col-md-12 text-center">
+            <button class="btn button-edit" type="button" [routerLink]="['/profile/password']">Cambiar contraseña</button>
+          </div>
+    </div>
+    <div class="col-md-4 border-right">
+      <div class="p-3 py-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="text-right"><strong>Perfil</strong></h2>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-5"><label class="labels">Grado</label>
+            <p>{{student.grado}}</p>
+          </div>
+          <div class="col-md-6"><label class="labels">Curso</label>
+            <p>{{student.curso}}</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12"><label class="labels">Género</label>
+            <p>{{student.perfil_estudiante?.datos_basicos?.genero}}</p>
+          </div>
+          <h4 class="text-left"><strong>Diversidad</strong></h4>
+          <div class="col-md-12"><label class="labels">Tipo</label>
+            <p>{{student.perfil_estudiante?.datos_basicos?.diversidad?.tipo}}</p>
+          </div>
+          <div class="col-md-12"><label class="labels">Temporalidad</label>
+            <p>{{student.perfil_estudiante?.datos_basicos?.diversidad?.temporalidad}}</p>
+          </div>
+          <h4 class="text-left"><strong>Notificaciones</strong></h4>
+          <div class="col-md-12"><label class="labels">Tema</label>
+            <p>{{student.perfil_estudiante?.preferencia?.notificaciones?.tema}}</p>
+          </div>
+          <div class="col-md-12"><label class="labels">Horario de notificaciones</label>
+            <p>{{student.perfil_estudiante?.preferencia?.notificaciones?.horario}}</p>
+          </div>
+          <h4 class="text-left"><strong>Horarios de Actividades Extracurriculares</strong></h4>
+          <div class="col-md-12"><label class="labels">Jornada</label>
+            <p>{{student.perfil_estudiante?.preferencia?.horario_de_actividades?.jornada}}</p>
+          </div>
+          <div class="col-md-12"><label class="labels">Días</label>
+            <p>{{student.perfil_estudiante?.preferencia?.horario_de_actividades?.dias}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="p-3 py-4">
+        <div class="d-flex justify-content-between align-items-center experience">
+          <h2><strong>Perfil de contexto</strong> </h2>
+        </div><br>
+        <br>
+        <div class="col-md-12"><label class="labels">Jornada de estudio</label>
+          <p>{{student.contexto_estudiante?.temporal?.jornada}}</p>
+        </div>
+        <div class="col-md-12"><label class="labels">Presupuesto</label>
+          <p>{{student.contexto_estudiante?.social?.presupuesto}}</p>
+        </div>
+        <div class="col-md-12"><label class="labels">Disciplina</label>
+          <p>{{student.contexto_estudiante?.reglamentacion?.disciplina}}</p>
+        </div>
+        <div class="col-md-12"><label class="labels">Número máximo de actividades extracurriculares</label>
+          <p>{{student.contexto_estudiante?.reglamentacion?.limite?.limite}}</p>
+        </div>
+        <div class="col-md-12"><label class="labels">Motivo del límite de actividades extracurriculares</label>
+          <p>{{student.contexto_estudiante?.reglamentacion?.limite?.causa}}</p>
+        </div>
+        <div class="col-md-12"><label class="labels">Alfabetización digital</label>
+          <p>{{student.contexto_estudiante?.tecnologico?.alfabetizacion}}</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="p-3 py-4">
+          <div class="d-flex justify-content-between align-items-center experience">
+            <div class="col-md-6 text-center">
+              <button [routerLink]="['/profile/update', student._id.$oid]" class="btn btn-primary profile-button"
+                type="button">Editar Perfil</button>
+            </div>
+            <div class="col-md-6 text-right">
+              <button class="btn button-cancel" type="button" (click)="back()">Atrás</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

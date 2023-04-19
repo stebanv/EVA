@@ -1,0 +1,35 @@
+.text-center {
+  text-align: center!important;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 0 solid rgba(0,0,0,.125);
+}
+
+button{
+  background-color: #084476;
+}
+
+.card-primary{
+  background-color: card card-outline card-primary;
+  color: #084476;
+}
+
+.card-outline{
+  color: #084476;
+}
+
+a{
+  text-decoration: none   ;
+}
+
+a:hover{
+  color: #084476;
+}
+
+button:hover{
+  background-color: #084476;
+}

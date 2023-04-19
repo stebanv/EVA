@@ -1,0 +1,40 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Recomendaciones</h1>
+        <h3>Número total de estudiantes: <strong>{{numeroTotal}}</strong></h3>
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+</div>
+<!-- <div class="container form-group">
+  <div class="row">
+  <div class="col-lg-6">
+    <input type="text" class="form-control" placeholder="Buscar instituciones educativas"  [(ngModel)]="word" (keydown)="search()">
+  </div>
+  <div class="col-lg-6">
+    <button [routerLink]="['/school/create']" class="btn-agg">AGREGAR<i class="fas fa-plus"></i></button>
+  </div>
+  </div>
+</div> -->
+
+<div class="activity--grid">
+  <div class="row">
+<!-- Gallery item -->
+    <div class="col-xl-3 col-lg-3 col-md-6 mb-4" *ngFor="let subarea of subareas | paginate: { itemsPerPage: 8, currentPage: page }">
+      <div class="white rounded shadow-sm">
+        <div class="p-4">
+          <h4><strong>{{subarea.nombre}}</strong></h4>
+          <h3 class="mb-0">{{subarea.recomendacion}}</h3>
+          <br>
+          <h3>Número de estudiantes: <strong>{{subarea.numero_estudiantes||0}}</strong></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<pagination-controls (pageChange)="page = $event"
+  previousLabel="Anterior"
+  nextLabel="Siguiente">
+</pagination-controls>

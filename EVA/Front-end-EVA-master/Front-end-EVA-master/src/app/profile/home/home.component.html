@@ -1,0 +1,117 @@
+<div class="container">
+  <div class="main-body" *ngIf="auth===true; else elseblock">
+    <div class="row gutters-sm">
+      <div class="col-md-12">
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="align-items-center justify-content-between">
+              <h3 class="label"><strong>Resumen de mis resultados</strong></h3>
+              <div class="col-md-12">
+                <div class="media g-mb-20 media-comment">
+                    <div *ngIf="areas.length!==0; else elseblock" class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+                      <p>Eres una persona con comportamiento {{criterios.actitud}}, un estilo de vida {{criterios.estilo_de_vida}},
+                        {{criterios.informacion}} a la hora de obtener la información y en la toma de decisiones eres {{criterios.toma_de_decisiones}}.
+                        Te interesa el trabajo {{criterios.modo_de_trabajo}}, en lugares con {{criterios.tipo_de_espacio}}, y en cuanto, a la metodología prefieres lo {{criterios.tipo_de_metodologia}}.
+                        Tienes preferencia por trabajar con {{criterios.objeto_de_trabajo}} y con un perfil vocacional {{criterios.perfil_vocacional}}.
+                        <br>
+                        <br>
+                        Tus áreas del conocimiento son:
+                      </p>
+                        <ul *ngFor="let area of areas">
+                          <li>{{area}}</li>
+                        </ul>
+                        <div class="col-md-12">
+                          <div class="bton">
+                            <br>
+                            <button [disabled]="areas.length===0" [routerLink]="['/test/result']" class="btn">Ver resultados detallados</button>
+                          </div>
+                        </div>
+                    </div>
+                    <ng-template #elseblock>
+                        <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+                          Tus recomendaciones no están disponibles en este momento
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="align-items-center justify-content-between">
+              <h3 class="label"><strong>Actividades que puedes realizar en tu colegio según tu perfil</strong></h3>
+              <div *ngIf="recomendation.actividades_extracurriculares.length>0; else elseblock">
+              <div class="col-xl-8 col-lg-4 col-md-6 mb-4 ml-5" *ngFor="let activity of recomendation.actividades_extracurriculares | paginate: { itemsPerPage: 1, currentPage: page }">
+                <div class="bg-white rounded shadow-sm align-items-center"><img src="https://i.ibb.co/DYgZWRf/extracurriculares.jpg" alt="" class="img-fluid card-img-top">
+                  <div class="p-6 ml-3">
+                    <br>
+                    <h5><a [routerLink]="['/eactivity/detail', activity.id]" class="text-dark">{{activity.nombre}}</a></h5>
+                    <p class="small text-muted mb-0">{{activity.descripcion}}</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <a [routerLink]="['/eactivity/read']" class="btn more-info">Ver más actividades</a>
+            </div>
+            <ng-template #elseblock>
+              <p>En este momento tu institución educativa no tiene actividades extracurriculares disponibles para ti</p>
+            </ng-template>
+            </div>
+            <pagination-controls (pageChange)="page = $event"
+                    previousLabel="Anterior"
+                    nextLabel="Siguiente">
+            </pagination-controls>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mt-3">
+          <div class="card-body">
+            <div class="align-items-center justify-content-between">
+              <h3 class="label"><strong>Actividades que puedes realizar en convenios según tu perfil</strong></h3>
+              <div *ngIf="recomendation.convenios.length>0; else elseblock">
+              <div class="col-xl-8 col-lg-4 col-md-8 mb-4 ml-5 align-items-center" *ngFor="let aggre of recomendation.convenios| paginate: { itemsPerPage: 1, currentPage: page }">
+                <div class="bg-white rounded shadow-sm align-items-center"><img src="https://i.ibb.co/K95w94d/convenios.jpg" alt="" class="img-fluid card-img-top">
+                  <div class="p-6 ml-3">
+                    <br>
+                    <h5><a [routerLink]="['/aggrement/detail', aggre.id]" class="text-dark">{{aggre.nombre}}</a></h5>
+                    <p class="small text-muted mb-0">{{aggre.descripcion}}</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <a [routerLink]="['/aggrement/read']" class="btn more-info">Ver más convenios</a>
+            </div>
+            <ng-template #elseblock>
+              <p>En este momento tu institución educativa no tiene convenios disponibles para ti</p>
+            </ng-template>
+            </div>
+            <pagination-controls (pageChange)="page = $event"
+                    previousLabel="Anterior"
+                    nextLabel="Siguiente">
+            </pagination-controls>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #elseblock>
+    <div class="main-body">
+      <div class="d-flex justify-content-center container">
+        <div class="card p-3 bg-white mt-5">
+          <div class="about-product text-center mt-2"><img src="https://i.ibb.co/SxyRSZd/Dise-o-sin-t-tulo-1.png"
+                                                           width="400">
+            <br><br>
+            <div>
+              <h1 class="h1m"><strong>¡Oh no!...</strong></h1>
+              <h3 class="mt-0 text-black-50">No estás autorizado para recibir los resultados del test ni tus recomendaciones</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

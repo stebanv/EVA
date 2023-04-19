@@ -1,0 +1,87 @@
+{
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MTY4NjY4NCwianRpIjoiOTc0NjNhMzAtZWIwZC00NmZlLThjYzEtOWU4NjNiYjkxMDcwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJfaWQiOnsiJG9pZCI6IjYyNzJiNzUzMDc1NzdjNDQ3YTEzNWIxZCJ9LCJub21icmUiOiJBbmRyZWEiLCJhcGVsbGlkbyI6IkFsdmFyZXoiLCJjdXJzbyI6IjIiLCJncmFkbyI6IjgiLCJwZXJmaWxfZXN0dWRpYW50ZSI6eyJkYXRvc19iYXNpY29zIjp7fSwicHJlZmVyZW5jaWEiOnt9LCJpbnRlcmVzIjp7fSwicGVyc29uYWxpZGFkIjp7fX0sImNvbnRleHRvX2VzdHVkaWFudGUiOnsidGVtcG9yYWwiOnt9LCJzb2NpYWwiOnt9LCJyZWdsYW1lbnRhY2lvbiI6e30sInRlY25vbG9naWNvIjp7fX0sImluc3RpdHVjaW9uIjp7IiRvaWQiOiI2MjcyYWQ1ODJkN2MwMjMwMDE4NWJmOGIifX0sIm5iZiI6MTY1MTY4NjY4NCwiZXhwIjoxNjUxNjg3NTg0fQ._4SQQqtut-4i-ma3hAyLfFRIpWJvslyucO-yqmrIsPQ",
+  "referencia_estudiante": {
+    "_id": {
+      "$oid": "6272b75307577c447a135b1d"
+    },
+    "apellido": "Alvarez",
+    "contexto_estudiante": {
+      "reglamentacion": {},
+      "social": {},
+      "tecnologico": {},
+      "temporal": {}
+    },
+    "curso": "2",
+    "grado": "8",
+    "institucion": {
+      "$oid": "6272ad582d7c02300185bf8b"
+    },
+    "nombre": "Andrea",
+    "perfil_estudiante": {
+      "datos_basicos": {},
+      "interes": {},
+      "personalidad": {},
+      "preferencia": {}
+    }
+  },
+  "referencia_institucion": {
+    "_id": {
+      "$oid": "6272ad582d7c02300185bf8b"
+    },
+    "actividad_extracurricular": [],
+    "contexto_institucion": {
+      "estructura": {
+        "recursos": [
+          {
+            "item_id": 1,
+            "item_text": "Instrumentos de laboratorio"
+          }
+        ],
+        "tipo_espacios": [
+          {
+            "item_id": 1,
+            "item_text": "Cancha de fútbol"
+          }
+        ]
+      },
+      "reglamentacion": {
+        "limite_actividades": 12,
+        "limites": "No aplican"
+      },
+      "tecnologico": {
+        "adecuacion": [
+          {
+            "item_id": 1,
+            "item_text": "Sala audiovisual"
+          }
+        ],
+        "recursos": [
+          {
+            "item_id": 1,
+            "item_text": "Computadores de escritorio"
+          },
+          {
+            "item_id": 2,
+            "item_text": "Computadores pórtatiles"
+          }
+        ]
+      }
+    },
+    "convenio": [],
+    "nombre": "Colegio Distrital Nueva Esperanza IED",
+    "perfil_institucion": {
+      "preferencias": {
+        "area_del_conocimiento": {
+          "area": "Ciencias sociales y humanidades",
+          "recursos": "X, Y, Z"
+        },
+        "forma_presentar_resultados": "Todos",
+        "notificaciones": "Todas"
+      }
+    },
+    "test": true,
+    "ubicacion": "Carrera 15 Este 76-59 sur"
+  },
+  "tipo_usuario": "estudiante",
+  "usuario": "AndreaAL"
+}

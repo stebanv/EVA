@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-213.7172.26">
+    <data-source name="EVA" uuid="2530a1e1-7a5a-4dab-b070-6db0645a866b">
+      <database-info product="Mongo DB" version="5.0.7" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.14" dbms="MONGO" exact-version="5.0.7" exact-driver-version="1.14" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>oscar</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

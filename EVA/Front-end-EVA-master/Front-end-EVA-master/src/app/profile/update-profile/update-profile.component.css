@@ -1,0 +1,56 @@
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #084476
+}
+
+.profile-button {
+  background: #084476;
+  box-shadow: none;
+  border: none
+}
+
+.profile-button:hover {
+  background: #084476
+}
+
+.profile-button:focus {
+  background: #084476;
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: #084476;
+  box-shadow: none
+}
+
+.back:hover {
+  color: #084476;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 11px
+}
+
+.add-experience:hover {
+  background: #084476;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #084476
+}
+
+.button-cancel {
+  background-color: red;
+  color: white;
+}
+
+.btn-tooltip{
+  color: red;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.example-tooltip-red {
+  background: #b71c1c;
+}

@@ -1,0 +1,61 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Instituciones Educativas</h1>
+      </div><!-- /.container-fluid -->
+    </div>
+  </div>
+</div>
+<div class="container form-group">
+  <div class="row">
+  <div class="col-lg-6">
+    <input type="text" class="form-control" placeholder="Buscar instituciones educativas"  [(ngModel)]="word" (keydown)="search()">
+  </div>
+  <div class="col-lg-6">
+    <button [routerLink]="['/school/create']" class="btn-agg">AGREGAR<i class="fas fa-plus"></i></button>
+  </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-10 ml-auto mr-auto">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th>Nombre</th>
+              <th class="text-center">Dirección</th>
+              <th class="text-right">Acciones</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let school of schools | paginate: { itemsPerPage: 7, currentPage: page }; let i = index">
+            <tr>
+              <td class="text-center">{{i+1}}</td>
+              <td>{{school.nombre}}</td>
+              <td class="text-center">{{school.ubicacion}}</td>
+              <td class="td-actions text-right">
+                <button type="button" [routerLink]="['/profile/read-school', school._id.$oid]" rel="tooltip" class="btn btn-info btn-just-icon">
+                  <i class="fas fa-eye"></i>
+                </button>
+                <button type="button" [routerLink]="['/school/update/', school._id.$oid]" rel="tooltip" class="btn btn-success btn-just-icon">
+                  <i class="fas fa-pen"></i>
+                </button>
+                <button type="button" (click)="delete(school._id.$oid)" rel="tooltip" class="btn btn-danger btn-just-icon" >
+                  <i class="fas fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<pagination-controls (pageChange)="page = $event"
+previousLabel="Anterior"
+nextLabel="Siguiente">
+</pagination-controls>

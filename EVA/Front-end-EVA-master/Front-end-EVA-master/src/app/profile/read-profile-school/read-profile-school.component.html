@@ -1,0 +1,57 @@
+<div class="content rounded bg-white">
+  <div class="row">
+      <div class="col-md-3 border-right">
+          <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://i.ibb.co/GWHMwVz/esculea-150.jpg"><br><span class="font-weight-bold">{{school.nombre}}</span><span> </span>
+          <br>
+          <button class="btn button-edit" type="button" [routerLink]="['/profile/password']">Cambiar contraseña</button>
+        </div>
+      </div>
+      <div class="col-md-4 border-right">
+          <div class="p-3 py-4">
+              <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="text-right"><strong>Perfil</strong></h3>
+              </div>
+              <div class="row mt-3">
+                  <div class="col-md-12" ><label class="labels">Notificaciones</label><p>{{school.perfil_institucion?.preferencias?.notificaciones}}</p></div>
+                  <h4 class="text-left"><strong>Área del conocimiento</strong></h4>
+                  <div class="col-md-12"><label class="labels">Área</label><p>{{school.perfil_institucion?.preferencias?.area_del_conocimiento?.area}}</p></div>
+                  <div class="col-md-12"><label class="labels">Recursos</label><p>{{school.perfil_institucion?.preferencias?.area_del_conocimiento?.recursos}}</p></div>
+                  <h4 class="text-left"><strong>Forma de presentar resultados</strong></h4>
+                  <div class="col-md-12"><label class="labels">Resultados</label><p>{{school.perfil_institucion?.preferencias?.forma_presentar_resultados}}</p></div>
+                  <br> <br>
+                  <br>
+                  <div class="d-flex justify-content-between align-items-center experience"><h3><strong>Perfil de contexto</strong> </h3></div><br>
+                  <h4 class="text-left"><strong>Reglamentación</strong></h4>
+                  <div class="col-md-12"><label class="labels">Límite de actividades extracurriculares</label><p>{{school.contexto_institucion?.reglamentacion?.limite_actividades}}</p></div>
+                </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="p-3 py-5">
+            <div class="col-md-12"><label class="labels">Reglas</label><p>{{school.contexto_institucion?.reglamentacion?.limites}}</p></div>
+              <h4 class="text-left"><strong>Tecnológico</strong></h4>
+              <div class="col-md-12"><label class="labels">Adecuación</label><p *ngFor="let item of school.contexto_institucion?.tecnologico?.adecuacion">{{item.item_text}}</p></div>
+              <div class="col-md-12"><label class="labels">Recursos</label><p *ngFor="let item of school.contexto_institucion?.tecnologico?.recursos ">{{item.item_text}}</p></div>
+              <h4 class="text-left"><strong>Estructura</strong></h4>
+              <div class="col-md-12"><label class="labels">Tipo de espacios</label><p *ngFor="let item of school.contexto_institucion?.estructura?.tipo_espacios">{{item.item_text}}</p></div>
+              <div class="col-md-12"><label class="labels">Recursos</label><p *ngFor="let item of school.contexto_institucion?.estructura?.recursos">{{item.item_text}}</p></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="p-3 py-4">
+                <div class="d-flex justify-content-between align-items-center experience">
+                  <div class="col text-right">
+                    <button [routerLink]="['/profile/update-school', school._id.$oid]" class="btn profile-button" type="button">Editar Perfil</button>
+                  </div>
+                  <div class="col text-right">
+                    <button class="btn button-cancel" type="button" (click)="onBack()">Atrás</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <br>
+      </div>
+  </div>
+</div>
+
+

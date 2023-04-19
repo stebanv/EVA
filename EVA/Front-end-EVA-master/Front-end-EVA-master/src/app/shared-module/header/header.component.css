@@ -1,0 +1,64 @@
+
+.avatar {
+  border-radius: 60%;
+  /* border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%; */
+  width: 70px;
+
+}
+
+.image img {
+  transition: all 0.5s
+}
+
+.btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold
+}
+
+.type{
+  font-size: 13px;
+}
+
+.idd {
+  font-size: 14px;
+  font-weight: 600
+}
+
+.btn1 {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background-color: #084476;
+  color: white;
+  font-size: 15px
+}
+
+.image{
+  width: 200px;
+  height: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.a-form{
+  font-weight: bold;
+  color: #0067a9;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.a-form:hover{
+  color: #89AB32;
+}

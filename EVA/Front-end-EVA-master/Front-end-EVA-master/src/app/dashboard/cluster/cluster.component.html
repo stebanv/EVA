@@ -1,0 +1,164 @@
+
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <h2>Agrupación de estudiantes según sus resultados</h2>
+  <button mat-raised-button matTooltipClass="tooltip"
+                matTooltip="Los siguientes diagramas muestran los grupos de clusters generados por el sistema" matTooltipPosition="above" type="button"
+                class="btn-tooltip">Ver descripción <i class="fas fa-eye"></i></button>
+</div>
+<!-- /.content-header -->
+
+<!-- Main content -->
+<div class="content">
+  <div class="container-fluid">
+    <!-- grafico de cluster 1 -->
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header border-0">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Primer grupo</h3>
+          </div>
+        </div>
+        <div class="card-body">
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData1" [options]="barChartOptions1"
+                  [type]="barChartType1" (chartHover)="chartHovered($event)">
+                </canvas>
+              </div>
+              <br>
+              <button class="btn bg-tecnologia" mat-button mat-raised-button
+                (click)="updateCluster()">Actualizar</button>
+            </div>
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+    </div>
+
+    <!-- grafico de cluster 2 -->
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header border-0">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Segundo grupo</h3>
+          </div>
+        </div>
+        <div class="card-body">
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData2" [options]="barChartOptions2"
+                  [type]="barChartType2" (chartHover)="chartHovered($event)">
+                </canvas>
+              </div>
+              <br>
+              <button class="btn bg-tecnologia" mat-button mat-raised-button
+                (click)="updateCluster()">Actualizar</button>
+            </div>
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+    </div>
+
+    <!-- grafico de cluster 3 -->
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header border-0">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Tercer grupo</h3>
+          </div>
+        </div>
+        <div class="card-body">
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData3" [options]="barChartOptions3"
+                  [type]="barChartType3" (chartHover)="chartHovered($event)">
+                </canvas>
+              </div>
+              <br>
+              <button class="btn bg-tecnologia" mat-button mat-raised-button
+                (click)="updateCluster()">Actualizar</button>
+            </div>
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+    </div>
+
+     <!-- grafico de cluster 3 -->
+     <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header border-0">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Cuarto grupo</h3>
+          </div>
+        </div>
+        <div class="card-body">
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData4" [options]="barChartOptions4"
+                  [type]="barChartType4" (chartHover)="chartHovered($event)">
+                </canvas>
+              </div>
+              <br>
+              <button class="btn bg-tecnologia" mat-button mat-raised-button
+                (click)="updateCluster()">Actualizar</button>
+            </div>
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+    </div>
+
+     <!-- grafico de cluster 4 -->
+     <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header border-0">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Quinto grupo</h3>
+          </div>
+        </div>
+        <div class="card-body">
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData5" [options]="barChartOptions5"
+                  [type]="barChartType5" (chartHover)="chartHovered($event)">
+                </canvas>
+              </div>
+              <br>
+              <button class="btn bg-tecnologia" mat-button mat-raised-button
+                (click)="updateCluster()">Actualizar</button>
+            </div>
+        </div>
+        <!-- /.col-md-5 -->
+      </div>
+    </div>
+
+     <!-- grafico de cluster 6 -->
+     <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header border-0">
+          <div class="d-flex justify-content-between">
+            <h3 class="card-title">Sexto grupo</h3>
+          </div>
+        </div>
+        <div class="card-body">
+            <div>
+              <div style="display: block">
+                <canvas baseChart [data]="barChartData6" [options]="barChartOptions6"
+                  [type]="barChartType6" (chartHover)="chartHovered($event)">
+                </canvas>
+              </div>
+              <br>
+              <button class="btn bg-tecnologia" mat-button mat-raised-button
+                (click)="updateCluster()">Actualizar</button>
+            </div>
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+    </div>
+
+
+
+  </div>
+
+  </div>
+</div>

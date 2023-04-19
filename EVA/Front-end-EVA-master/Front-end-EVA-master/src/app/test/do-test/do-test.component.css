@@ -1,0 +1,30 @@
+
+span {
+  font-style: italic;
+}
+.card{
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+}
+li{
+  list-style-type: none;
+  cursor: pointer;
+  margin:10px 0;
+}
+li .card:hover{
+  background-color: #89AB32;
+  color: white;
+}
+ol{
+  padding: 0;
+}
+
+img{
+  align-items: center;
+
+}
+
+.h1m {
+  color: #084476;
+}

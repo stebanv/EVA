@@ -1,0 +1,224 @@
+
+a {
+  color: #3e3947 !important;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #89229b !important;
+  text-decoration: none !important;
+}
+a:focus {
+  color: #89229b !important;
+  text-decoration: none !important;
+}
+.container h3{
+  font-size:30px ;
+  margin-top: 20px ;
+  margin-bottom: 10px ;
+  font-weight: 400 ;
+  color: #3c4858 ;
+}
+.container h4{
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px 0;
+  font-weight: 400;
+  color: #3c4858;
+}
+
+small{
+  font-size: 75% !important;
+  color: #777;
+}
+
+.btn{
+  padding: 12px 30px !important;
+  margin: 5px 1px;
+  font-size: 12px !important;
+  box-shadow: 0 2px 2px 0 hsla(0,0%,60%,.14), 0 3px 1px -2px hsla(0,0%,60%,.2), 0 1px 5px 0 hsla(0,0%,60%,.12);
+}
+
+.btn.btn-sm{
+  border-radius:3px !important;
+}
+
+.btn.btn-just-icon.btn-sm {
+  height: 30px;
+  min-width: 30px;
+  width: 30px;
+}
+
+.btn.btn-just-icon {
+  font-size: 24px;
+  height: 41px;
+  min-width: 41px;
+  width: 41px;
+  padding: 0 !important;
+  position: relative;
+  line-height: 41px;
+}
+
+
+.btn.btn-link{
+  background: transparent;
+  box-shadow: none;
+  color: #999;
+}
+
+.btn.btn-info {
+  color: #fff !important;
+  background-color: #00bcd4 !important;
+  border-color: #00bcd4;
+  box-shadow: 0 2px 2px 0 rgba(0,188,212,.14),
+              0 3px 1px -2px rgba(0,188,212,.2),
+              0 1px 5px 0 rgba(0,188,212,.12) !important;
+}
+
+.btn.btn-info:hover {
+  box-shadow: 0 14px 26px -12px rgba(0,188,212,.42),
+              0 4px 23px 0 rgba(0,0,0,.12),
+              0 8px 10px -5px rgba(0,188,212,.2) !important;
+  background: #00aec5 !important;
+}
+
+.btn.btn-info.btn-link{
+  background-color: transparent !important;
+  color: #00bcd4 !important;
+  box-shadow:none !important;
+}
+.btn.btn-success {
+  color: #fff !important;
+  background-color: #4caf50 !important;
+  border-color: #4caf50;
+  box-shadow: 0 2px 2px 0 rgba(76,175,80,.14),
+              0 3px 1px -2px rgba(76,175,80,.2),
+              0 1px 5px 0 rgba(76,175,80,.12) !important;
+}
+
+.btn.btn-success:hover {
+  box-shadow: 0 14px 26px -12px rgba(76,175,80,.42),
+              0 4px 23px 0 rgba(0,0,0,.12),
+              0 8px 10px -5px rgba(76,175,80,.2) !important;
+  background: #47a44b  !important;
+}
+.btn.btn-success.btn-link{
+  background-color: transparent !important;
+  color: #4caf50 !important;
+  box-shadow: none !important;
+}
+
+.btn.btn-danger {
+  color: #fff !important;
+  background-color: #f44336 !important;
+  border-color: #f44336;
+  align-content: center;
+  box-shadow: 0 2px 2px 0 rgba(244,67,54,.14),
+              0 3px 1px -2px rgba(244,67,54,.2),
+              0 1px 5px 0 rgba(244,67,54,.12) !important;
+
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+
+.table thead tr th {
+  font-size: 17px ;
+  font-weight: 300;
+}
+
+.table>thead>tr>th{
+  padding: 10px 8px;
+  vertical-align: middle;
+  border-color: black;
+  font-weight: bold;
+  font-size: large;
+  color: #0067a9;
+}
+
+.table>tbody>tr>td{
+  padding: 10px 8px;
+  vertical-align: middle;
+  border-color: black;
+  font-weight: 300;
+  font-size:14px;
+  color: #3c4858;
+
+}
+/*animation*/
+
+@keyframes checkbox-on {
+0% {
+  box-shadow:
+    0 0 0 10px,
+    10px -10px 0 10px,
+    32px 0 0 20px,
+    0px 32px 0 20px,
+    -5px 5px 0 10px,
+    15px 2px 0 11px;
+}
+50% {
+  box-shadow:
+    0 0 0 10px,
+    10px -10px 0 10px,
+    32px 0 0 20px,
+    0px 32px 0 20px,
+    -5px 5px 0 10px,
+    20px 2px 0 11px;
+}
+100% {
+  box-shadow:
+    0 0 0 10px,
+    10px -10px 0 10px,
+    32px 0 0 20px,
+    0px 32px 0 20px,
+    -5px 5px 0 10px,
+    20px -12px 0 11px;
+}
+}
+
+.tooltip-arrow {
+display: none;
+}
+
+.tooltip.show {
+display: block;
+opacity: 1;
+-webkit-transform: translate3d(0, 0px, 0);
+-moz-transform: translate3d(0, 0px, 0);
+-o-transform: translate3d(0, 0px, 0);
+-ms-transform: translate3d(0, 0px, 0);
+transform: translate3d(0, 0px, 0);
+}
+
+.tooltip {
+opacity: 0;
+transition: opacity, transform .2s ease;
+-webkit-transform: translate3d(0, 5px, 0);
+-moz-transform: translate3d(0, 5px, 0);
+-o-transform: translate3d(0, 5px, 0);
+-ms-transform: translate3d(0, 5px, 0);
+transform: translate3d(0, 5px, 0);
+font-size: 0.75rem;
+}
+
+.btn-agg {
+  background-color: #0067a9;
+  color:white;
+  border: 2px solid;
+  border-radius: 20px;
+  margin-bottom: 20px ;
+  margin-left: 20px;
+  width: 200px;
+  height: 40px;
+  font-size: large;
+  text-align: center;
+}
+
+.btn-agg i{
+  margin-left: 10px;
+}
