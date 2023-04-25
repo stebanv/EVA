@@ -10,8 +10,8 @@
           "strict": true
         }
       },
-      "root": "",
-      "sourceRoot": "./src",
+      "root": "src",
+      "sourceRoot": "",
       "prefix": "app",
       "architect": {
         "build": {
